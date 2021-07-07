@@ -1,0 +1,27 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2 ems;
+    color: #DE101D;
+}
+
+p {
+    font-size: 14px;
+    color: #850F16;
+    font-family: Garamond, 'Times New Roman', serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+
+div {
+    background-color: #DB5B0B;
+    border: 2px solid #8F3C09;
+}
+
+a {
+    text-decoration: none;
+}

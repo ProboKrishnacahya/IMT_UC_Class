@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//* Routing Web Pages
 Route::get('/', function () {
     return view("pages.home");
 });
@@ -37,6 +38,10 @@ Route::get('/users/{id}/{nama}', function ($id, $nama) {
     return "Pengguna ".$nama." memiliki ID pengguna ".$id;
 });
 
+//* Dapat diakses secara global
 Route::get('blade', function () {
 	return view('child');
 });
+
+//* Shortcut Routing untuk Artisan –resource
+Route::resource('/post','PostController');

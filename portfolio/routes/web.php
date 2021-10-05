@@ -14,5 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return "pages.home";
+});
+
+Route::get('/about', function () {
+    return view("pages.about");
+});
+
+Route::get('/education', function () {
+    return view("pages.education");
+});
+
+Route::get('/project', function () {
+    return view("pages.project");
+});
+
+Route::get('/users/{id}', function ($id) {
+    return "ID pengguna: ".$id;
+});
+
+Route::get('/users/{id}/{nama}', function ($id, $nama) {
+    return "Pengguna ".$nama." memiliki ID pengguna ".$id;
 });

@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return "pages.home";
+    return view("pages.home");
 });
 
 Route::get('/about', function () {
@@ -35,4 +35,8 @@ Route::get('/users/{id}', function ($id) {
 
 Route::get('/users/{id}/{nama}', function ($id, $nama) {
     return "Pengguna ".$nama." memiliki ID pengguna ".$id;
+});
+
+Route::get('blade', function () {
+	return view('child');
 });

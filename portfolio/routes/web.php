@@ -17,18 +17,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view("pages.home");
 });
+// Route::get('/', "PagesController@home");
 
 Route::get('/about', function () {
     return view("pages.about");
 });
+// Route::get('/about', "PagesController@about");
 
 Route::get('/education', function () {
     return view("pages.education");
 });
+// Route::get('/education', "PagesController@education");
 
 Route::get('/project', function () {
     return view("pages.project");
 });
+// Route::get('/project', "PagesController@project");
 
 Route::get('/users/{id}', function ($id) {
     return "ID pengguna: ".$id;
@@ -43,5 +47,7 @@ Route::get('blade', function () {
 	return view('child');
 });
 
-//* Shortcut Routing untuk Artisan –resource
+//* Shortcut Routing untuk Artisan -resource
 Route::resource('/post','PostController');
+
+Route::resource('posts','PostsController');

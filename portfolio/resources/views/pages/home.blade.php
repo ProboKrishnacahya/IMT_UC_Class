@@ -1,5 +1,6 @@
 {{-- extend akan mengganti setiap bagian (section) layout. Content yang ditulis pada layout dapat disertakan menggunakan directive @parent dalam section --}}
 @extends('layouts.app')
+@include('layouts.navigation')
 
 {{-- Directive @section mendefinisikan bagian (section) isi halaman web --}}
 @section('content')
